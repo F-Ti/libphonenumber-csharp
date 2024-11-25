@@ -1,12 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netframework4.8;net8.0;net9.0</TargetFrameworks>
+    <TargetFrameworks>netframework4.8;net8.0</TargetFrameworks>
     <AssemblyName>PhoneNumbers.Test</AssemblyName>
     <PackageId>PhoneNumbers.Test</PackageId>
     <DebugType>full</DebugType>
     <NoWarn>$(NoWarn);CA1014;CA1707</NoWarn>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>C:\Users\tier\source\tfs\amex\Master\AmexClient\ams.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(TargetFramework)' == 'net8.0' Or '$(TargetFramework)' == 'net9.0'">
@@ -34,7 +36,6 @@
   <ItemGroup>
     <EmbeddedResource Include="..\..\resources\PhoneNumberMetadataForTesting.xml" />
     <EmbeddedResource Include="..\..\resources\test\geocoding\**" LinkBase="geocoding" />
-    <EmbeddedResource Include="..\..\resources\test\testgeocoding.zip" />
   </ItemGroup>
 
   <ItemGroup>

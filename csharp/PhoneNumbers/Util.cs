@@ -19,8 +19,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 
-[assembly: InternalsVisibleTo("PhoneNumbers.Test")]
-
 namespace PhoneNumbers
 {
     internal class EnumerableFromConstructor<T> : IEnumerable<T>

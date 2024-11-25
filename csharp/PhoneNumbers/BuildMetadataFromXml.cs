@@ -153,7 +153,7 @@ namespace PhoneNumbers
         }
 
         // enabled only for unit tests
-        internal static HashSet<string> ValidPatterns;
+       internal static HashSet<string> ValidPatterns = null;
 
         public static string ValidateRE(string regex)
         {
